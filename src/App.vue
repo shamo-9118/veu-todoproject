@@ -1,6 +1,7 @@
 <script setup>
 import Input from "./components/Input.vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import Task from "./components/Task.vue";
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     </a>
   </div>
   <HelloWorld />
+  <Task />
   <Input />
 </template>
 

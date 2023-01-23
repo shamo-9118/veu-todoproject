@@ -10,7 +10,6 @@ const answer = computed(() => {
     {{ answer }}
   </div>
 </template>
-
 <!-- computed()とやらをつけないとエスケープされずHTMLとして出力されるみたい -->
 <!-- <template><template/> の中にHTMLを記述する。{{}}二重波括弧でJSを記載可能 -->
 <!-- <script><script/>内にjsを記載するvueからimportして使用する -->
