@@ -13,6 +13,6 @@ const addTask = () => {
   <button @click="addTask()">登録</button>
 
   <ul>
-    <li v-for="(task, i) in tasks" v-bind:key="i">{{ i }}.{{ todo }}</li>
+    <li v-for="(task, i) in tasks" v-bind:key="i">{{ i }}.{{ task }}</li>
   </ul>
 </template>
