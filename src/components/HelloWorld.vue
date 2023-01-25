@@ -1,15 +1,18 @@
 <script setup>
-import { ref } from 'vue'
+import { ref } from "vue";
 
+//これは型？tsなのか？
 defineProps({
   msg: String,
-})
+});
 
-const count = ref(0)
+const count = ref(0);
+const message = ref("丸本からのメッセージ");
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
+  <div>{{ message }}</div>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>

@@ -16,6 +16,7 @@ import Task from "./components/Task.vue";
   <HelloWorld />
   <Task />
   <Input />
+
 </template>
 
 <style scoped>
