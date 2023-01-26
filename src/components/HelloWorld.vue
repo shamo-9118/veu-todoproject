@@ -8,11 +8,26 @@ defineProps({
 
 const count = ref(0);
 const message = ref("丸本からのメッセージ");
+const func = () => {
+  message = message.split("").reverse().join("");
+};
+
+const date = ref(new Date().toLocaleString());
+const boolean = ref(true);
+const countries = ref(["japan", "america", "canada"]);
+const text = ref("hello");
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-  <div>{{ message }}</div>
+  <p>{{ text }}</p>
+  <input v-model="text" />
+  <ul>
+    <li v-for="country in countries">{{ country }}</li>
+  </ul>
+  <div v-if="boolean">{{ message }}</div>
+  <button v-on:click="func">reverse message</button>
+  <div v-bind:title="message">{{ date }}</div>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
